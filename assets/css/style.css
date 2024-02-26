@@ -210,6 +210,17 @@ body {
   color: #ee1243 !important;
 }
 
+.comment-user {
+  height: 70px;
+  width: 70px;
+}
+
+.comment-user img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
 footer {
   background-image: url(/assets/images/footer-bg.png);
   height: 300px;
@@ -219,6 +230,9 @@ footer {
 
 /* // Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
+  .navbar-collapse {
+    display: none;
+  }
   .carousel-item {
     height: 70vh;
   }
@@ -236,6 +250,9 @@ footer {
   
   .hero-text h1 {
     font-size: 30px;
+  }
+  .comment-date {
+    display: none;
   }
   footer {
     background-image: url(/assets/images/footer-bg.png);
