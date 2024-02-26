@@ -24,15 +24,21 @@
 
     <link rel="stylesheet" href="/assets/css/style.css" />
 
-    <title>Hello, world!</title>
+    <link
+      rel="shortcut icon"
+      href="/assets/images/favicon.png"
+      type="image/x-icon"
+    />
+
+    <title>Electric Vehicles</title>
   </head>
   <body>
     <!-- Navbar Section Started -->
 
     <section class="bg-dark">
-      <div class="container">
+      <div class="container-fluid">
         <div class="row">
-          <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+          <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-dark">
             <div class="container-fluid">
               <a class="navbar-brand" href="/">
                 <img src="/assets/images/logo.png" class="img-fluid" alt="" />
@@ -46,7 +52,13 @@
                 aria-expanded="false"
                 aria-label="Toggle navigation"
               >
-                <span class="navbar-toggler-icon bg-white" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample"></span>
+                <span
+                  class="navbar-toggler-icon bg-white"
+                  data-bs-toggle="offcanvas"
+                  href="#offcanvasExample"
+                  role="button"
+                  aria-controls="offcanvasExample"
+                ></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
@@ -76,26 +88,11 @@
                   </li>
                 </ul>
 
-                <form
-                  class="d-flex search-bar px-3 border border-1 rounded rounded-pill align-items-center bg-dark"
+                <button
+                  class="btn btn-outline-danger text-wrap mx-2 px-3 rounded-pill"
                 >
-                  <input
-                    class="form-control me-2 border-0 text-white bg-transparent"
-                    type="search"
-                    placeholder="Search"
-                    aria-label="Search"
-                  />
-                  <div>
-                    <a href="#">
-                      <img
-                        src="/assets/images/search-icon.svg"
-                        class="img-fluid"
-                        alt=""
-                      />
-                    </a>
-                  </div>
-                </form>
-                
+                  Switch to Bikes
+                </button>
               </div>
             </div>
           </nav>
@@ -104,63 +101,52 @@
     </section>
 
     <!-- Navbar Section Ended -->
-    
+
     <!-- OffCanvas Section Started -->
-    
-    <div class="offcanvas offcanvas-start bg-dark" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+
+    <div
+      class="offcanvas offcanvas-start bg-dark"
+      tabindex="-1"
+      id="offcanvasExample"
+      aria-labelledby="offcanvasExampleLabel"
+    >
       <div class="offcanvas-header mx-4">
         <h5 class="offcanvas-title" id="offcanvasExampleLabel">
-          <img src="/assets/images/logo.png" class="img-fluid" alt="">
+          <img src="/assets/images/logo.png" class="img-fluid" alt="" />
         </h5>
-        <button type="button" class="btn-close text-reset bg-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        <button
+          type="button"
+          class="btn-close text-reset bg-white"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
       </div>
-      <div class="offcanvas-body px-5">
+      <div class="offcanvas-body mx-4">
         <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a
-              class="nav-link active text-white"
-              aria-current="page"
-              href="#"
+            <a class="nav-link active text-white" aria-current="page" href="#"
               >Home</a
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white px-md-5 px-0" href="#"
-              >About</a
-            >
+            <a class="nav-link text-white px-lg-5 px-0" href="#">About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-white" href="#">Shop</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white px-md-5 px-0" href="#"
-              >Blogs</a
-            >
+            <a class="nav-link text-white px-lg-5 px-0" href="#">Blogs</a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-white" href="#">Contact</a>
           </li>
         </ul>
 
-        <form
-          class="d-flex search-bar px-3 border border-1 rounded rounded-pill align-items-center bg-dark"
+        <button
+          class="btn btn-outline-danger text-wrap mx-md-2 mx-0 my-md-0 my-3 px-3 rounded-pill"
         >
-          <input
-            class="form-control me-2 border-0 text-white bg-transparent"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-          />
-          <div>
-            <a href="#">
-              <img
-                src="/assets/images/search-icon.svg"
-                class="img-fluid"
-                alt=""
-              />
-            </a>
-          </div>
-        </form>
+          Switch to Bikes
+        </button>
       </div>
     </div>
 
@@ -256,9 +242,9 @@
     <section>
       <div class="container px-md-5 mb-5">
         <div class="row">
-          <div class="col-12 col-md-9 border-1 border p-4">
+          <div class="col-12 col-lg-9 col-md-8 border-1 border p-4">
             <div class="row align-items-center justify-content-between gy-3">
-              <div class="col-12 col-md-4">
+              <div class="col-12 col-lg-4 col-md-12">
                 <div
                   class="d-flex gap-3 pb-1 align-items-center justify-content-between px-md-3 px-4 border-bottom"
                 >
@@ -279,7 +265,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-12 col-md-4">
+              <div class="col-12 col-lg-4 col-md-12">
                 <div
                   class="d-flex gap-3 pb-1 align-items-center justify-content-between px-md-3 px-4 border-bottom"
                 >
@@ -300,7 +286,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-12 col-md-4">
+              <div class="col-12 col-lg-4 col-md-12">
                 <div
                   class="d-flex gap-3 pb-1 align-items-center justify-content-between px-md-3 px-4 border-bottom"
                 >
@@ -321,7 +307,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-12 col-md-4">
+              <div class="col-12 col-lg-4 col-md-12">
                 <div
                   class="d-flex gap-3 pb-1 align-items-center justify-content-between px-md-3 px-4 border-bottom"
                 >
@@ -334,15 +320,15 @@
                       />
                     </div>
                     <div>
-                      <p class="m-0">Transmission</p>
+                      <p class="m-0 text-wrap">Transmission</p>
                     </div>
                   </div>
                   <div class="">
-                    <h6 class="m-0 fw-bold">Automatic</h6>
+                    <h6 class="m-0 fw-bold text-wrap">Automatic</h6>
                   </div>
                 </div>
               </div>
-              <div class="col-12 col-md-4">
+              <div class="col-12 col-lg-4 col-md-12">
                 <div
                   class="d-flex gap-3 pb-1 align-items-center justify-content-between px-md-3 px-4 border-bottom"
                 >
@@ -363,7 +349,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-12 col-md-4">
+              <div class="col-12 col-lg-4 col-md-12">
                 <div
                   class="d-flex gap-3 pb-1 align-items-center justify-content-between px-md-3 px-4 border-bottom"
                 >
@@ -384,7 +370,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-12 col-md-4">
+              <div class="col-12 col-lg-4 col-md-12">
                 <div
                   class="d-flex gap-3 pb-1 align-items-center justify-content-between px-md-3 px-4 border-bottom"
                 >
@@ -405,7 +391,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-12 col-md-4">
+              <div class="col-12 col-lg-4 col-md-12">
                 <div
                   class="d-flex gap-3 pb-1 align-items-center justify-content-between px-md-3 px-4 border-bottom"
                 >
@@ -426,7 +412,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-12 col-md-4">
+              <div class="col-12 col-lg-4 col-md-12">
                 <div
                   class="d-flex gap-3 pb-1 align-items-center justify-content-between px-md-3 px-4 border-bottom"
                 >
@@ -453,7 +439,7 @@
             <!-- Features Section Started -->
             <h3 class="text-dark pb-3 oswald">Features</h3>
             <div class="row gy-3 px-md-0 px-3">
-              <div class="col-12 col-md-3">
+              <div class="col-12 col-lg-3 col-md-6">
                 <h6 class="oswald">Comfort</h6>
                 <div class="d-flex gap-2 align-items-center">
                   <div class="tick-mark-icon">
@@ -504,7 +490,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-12 col-md-3">
+              <div class="col-12 col-lg-3 col-md-6">
                 <h6 class="oswald">Entertainment</h6>
                 <div class="d-flex gap-2 align-items-center">
                   <div class="tick-mark-icon">
@@ -555,7 +541,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-12 col-md-3">
+              <div class="col-12 col-lg-3 col-md-6">
                 <h6 class="oswald">Safety</h6>
                 <div class="d-flex gap-2 align-items-center">
                   <div class="tick-mark-icon">
@@ -606,7 +592,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-12 col-md-3">
+              <div class="col-12 col-lg-3 col-md-6">
                 <h6 class="oswald">Seats</h6>
                 <div class="d-flex gap-2 align-items-center">
                   <div class="tick-mark-icon">
@@ -663,52 +649,58 @@
               <div class="d-flex justify-content-between">
                 <div class="d-flex gap-3">
                   <div class="comment-user">
-                    <img src="https://img.freepik.com/free-psd/3d-illustration-human-avatar-profile_23-2150671122.jpg?t=st=1708934051~exp=1708937651~hmac=dc1fab65294540158d5edfd9d99bbed80f543d25bce5b504d3ae5cddf14ce441&w=740" class="img-fluid rounded-circle" alt="">
+                    <img
+                      src="https://img.freepik.com/free-psd/3d-illustration-human-avatar-profile_23-2150671122.jpg?t=st=1708934051~exp=1708937651~hmac=dc1fab65294540158d5edfd9d99bbed80f543d25bce5b504d3ae5cddf14ce441&w=740"
+                      class="img-fluid rounded-circle"
+                      alt=""
+                    />
                   </div>
                   <div>
-                   <div class="d-flex align-items-center gap-md-2 gap-1">
-                    <h6 class="m-0">Ajmal Hussain</h6>
-                    <span class="text-secondary">Says:</span>
-                   </div>
-                   <p class="text-secondary py-md-2 py-3 m-0">Very Nice</p>
+                    <div class="d-flex align-items-center gap-md-2 gap-1">
+                      <h6 class="m-0">Ajmal Hussain</h6>
+                      <span class="text-secondary">Says:</span>
+                    </div>
+                    <p class="text-secondary py-md-2 py-3 m-0">Very Nice</p>
                   </div>
                 </div>
                 <div>
-                  <p class="text-secondary comment-date">November 1, 2023 at 12:56 AM</p>
+                  <p class="text-secondary comment-date">
+                    November 1, 2023 at 12:56 AM
+                  </p>
                 </div>
               </div>
-              <hr>
+              <hr />
               <div class="d-flex justify-content-between">
                 <div class="d-flex gap-3">
                   <div class="comment-user">
-                    <img src="https://img.freepik.com/free-psd/3d-illustration-human-avatar-profile_23-2150671122.jpg?t=st=1708934051~exp=1708937651~hmac=dc1fab65294540158d5edfd9d99bbed80f543d25bce5b504d3ae5cddf14ce441&w=740" class="img-fluid rounded-circle" alt="">
+                    <img
+                      src="https://img.freepik.com/free-psd/3d-illustration-human-avatar-profile_23-2150671122.jpg?t=st=1708934051~exp=1708937651~hmac=dc1fab65294540158d5edfd9d99bbed80f543d25bce5b504d3ae5cddf14ce441&w=740"
+                      class="img-fluid rounded-circle"
+                      alt=""
+                    />
                   </div>
                   <div>
-                   <div class="d-flex align-items-center gap-md-2 gap-1">
-                    <h6 class="m-0">Ajmal Hussain</h6>
-                    <span class="text-secondary">Says:</span>
-                   </div>
-                   <p class="text-secondary py-md-2 py-3 m-0">Very Nice</p>
+                    <div class="d-flex align-items-center gap-md-2 gap-1">
+                      <h6 class="m-0">Ajmal Hussain</h6>
+                      <span class="text-secondary">Says:</span>
+                    </div>
+                    <p class="text-secondary py-md-2 py-3 m-0">Very Nice</p>
                   </div>
                 </div>
                 <div>
-                  <p class="text-secondary comment-date">November 1, 2023 at 12:56 AM</p>
+                  <p class="text-secondary comment-date">
+                    November 1, 2023 at 12:56 AM
+                  </p>
                 </div>
               </div>
-              <hr>
+              <hr />
             </div>
-            <h4 class="text-uppercase">Leave a Reply</h4>
-            <p>
-              Your email address will not be published. Required fields are
-              marked <span class="text-danger">*</span>
-            </p>
+            <h4 class="text-uppercase pt-2">Leave a Reply</h4>
 
             <form action="">
               <div class="row">
                 <div class="col-12">
-                  <p class="m-0">
-                    Comment<span class="text-danger">*</span>
-                  </p>
+                  <p class="m-0">Comment<span class="text-danger">*</span></p>
                   <textarea
                     name=""
                     class="form-control"
@@ -732,10 +724,10 @@
               <button class="btn btn-primary">Submit</button>
             </form>
           </div>
-          <div class="col-12 col-md-3">
-            <img src="/assets/images/ad-1.png" class="img-fluid" alt="">
-            <img src="/assets/images/ad-3.png" class="img-fluid" alt="">
-            <img src="/assets/images/ad-4.png" class="img-fluid" alt="">
+          <div class="col-12 col-lg-3 col-md-4">
+            <img src="/assets/images/ad-1.png" class="img-fluid" alt="" />
+            <img src="/assets/images/ad-3.png" class="img-fluid" alt="" />
+            <img src="/assets/images/ad-4.png" class="img-fluid" alt="" />
           </div>
         </div>
       </div>
@@ -744,16 +736,15 @@
     <footer class="d-flex justify-content-center align-items-center py-5">
       <div class="container">
         <div class="row gy-3">
-          <div class="col-12 col-md-3">
+          <div class="col-12 col-lg-3 col-md-3">
             <div class="">
               <a href="/index.html">
                 <img src="/assets/images/logo.png" class="img-fluid" alt="" />
               </a>
               <p class="text-white oswald pt-3">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
-                voluptatum. 
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
-                voluptatum 
+                voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Totam voluptatum
               </p>
               <div class="social-links d-flex gap-4">
                 <a href="#" class="text-decoration-none">
@@ -768,59 +759,83 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-3">
+          <div class="col-12 col-lg-3 col-md-3">
             <h4 class="oswald text-white">Useful Links</h4>
             <div class="">
               <ul class="list-unstyled">
                 <li>
-                  <a href="#" class="text-white text-decoration-none oswald">All Vehicles</a>
+                  <a href="#" class="text-white text-decoration-none oswald"
+                    >All Vehicles</a
+                  >
                 </li>
                 <li>
-                  <a href="#" class="text-white text-decoration-none oswald">New Cars</a>
+                  <a href="#" class="text-white text-decoration-none oswald"
+                    >New Cars</a
+                  >
                 </li>
                 <li>
-                  <a href="#" class="text-white text-decoration-none oswald">Pickup Trucks</a>
+                  <a href="#" class="text-white text-decoration-none oswald"
+                    >Pickup Trucks</a
+                  >
                 </li>
                 <li>
-                  <a href="#" class="text-white text-decoration-none oswald">Auction Cars</a>
+                  <a href="#" class="text-white text-decoration-none oswald"
+                    >Auction Cars</a
+                  >
                 </li>
               </ul>
             </div>
           </div>
-          <div class="col-12 col-md-3">
+          <div class="col-12 col-lg-3 col-md-3">
             <h4 class="oswald text-white">Cars by Brands</h4>
             <div class="">
               <ul class="list-unstyled">
                 <li>
-                  <a href="#" class="text-white text-decoration-none oswald">BMW</a>
+                  <a href="#" class="text-white text-decoration-none oswald"
+                    >BMW</a
+                  >
                 </li>
                 <li>
-                  <a href="#" class="text-white text-decoration-none oswald">BYD</a>
+                  <a href="#" class="text-white text-decoration-none oswald"
+                    >BYD</a
+                  >
                 </li>
                 <li>
-                  <a href="#" class="text-white text-decoration-none oswald">Tesla</a>
+                  <a href="#" class="text-white text-decoration-none oswald"
+                    >Tesla</a
+                  >
                 </li>
                 <li>
-                  <a href="#" class="text-white text-decoration-none oswald">Toyota</a>
+                  <a href="#" class="text-white text-decoration-none oswald"
+                    >Toyota</a
+                  >
                 </li>
               </ul>
             </div>
           </div>
-          <div class="col-12 col-md-3">
+          <div class="col-12 col-lg-3 col-md-3">
             <h4 class="oswald text-white">About Us</h4>
             <div class="">
               <ul class="list-unstyled">
                 <li>
-                  <a href="#" class="text-white text-decoration-none oswald">Reviews</a>
+                  <a href="#" class="text-white text-decoration-none oswald"
+                    >Reviews</a
+                  >
                 </li>
                 <li>
-                  <a href="#" class="text-white text-decoration-none oswald">FAQ’s</a>
+                  <a href="#" class="text-white text-decoration-none oswald"
+                    >FAQ’s</a
+                  >
                 </li>
                 <li>
-                  <a href="#" class="text-white text-decoration-none oswald">Privacy & Policy</a>
+                  <a href="#" class="text-white text-decoration-none oswald"
+                    >Privacy & Policy</a
+                  >
                 </li>
                 <li>
-                  <a href="#" class="text-white text-decoration-none oswald">Terms & Conditions</a>
+                  <a href="#" class="text-white text-decoration-none oswald"
+                    >Terms & Conditions</a
+                  >
                 </li>
               </ul>
             </div>

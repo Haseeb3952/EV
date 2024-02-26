@@ -15,21 +15,30 @@
 
     <!-- Font Awesome CDN -->
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
     <!-- Custom CSS Link -->
 
     <link rel="stylesheet" href="/assets/css/style.css" />
 
-    <title>Hello, world!</title>
+    <link
+      rel="shortcut icon"
+      href="/assets/images/favicon.png"
+      type="image/x-icon"
+    />
+
+    <title>Electric Vehicles</title>
   </head>
   <body>
     <!-- Navbar Section Started -->
 
     <section class="bg-dark">
-      <div class="container">
+      <div class="container-fluid">
         <div class="row">
-          <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+          <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-dark">
             <div class="container-fluid">
               <a class="navbar-brand" href="/">
                 <img src="/assets/images/logo.png" class="img-fluid" alt="" />
@@ -43,7 +52,13 @@
                 aria-expanded="false"
                 aria-label="Toggle navigation"
               >
-                <span class="navbar-toggler-icon bg-white" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample"></span>
+                <span
+                  class="navbar-toggler-icon bg-white"
+                  data-bs-toggle="offcanvas"
+                  href="#offcanvasExample"
+                  role="button"
+                  aria-controls="offcanvasExample"
+                ></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
@@ -56,7 +71,7 @@
                     >
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-white px-md-5 px-0" href="#"
+                    <a class="nav-link text-white px-lg-5 px-md-0 px-0" href="#"
                       >About</a
                     >
                   </li>
@@ -64,7 +79,7 @@
                     <a class="nav-link text-white" href="#">Shop</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-white px-md-5 px-0" href="#"
+                    <a class="nav-link text-white px-lg-5 px-md-0 px-0" href="/blogs.html"
                       >Blogs</a
                     >
                   </li>
@@ -72,27 +87,11 @@
                     <a class="nav-link text-white" href="#">Contact</a>
                   </li>
                 </ul>
-
-                <form
-                  class="d-flex search-bar px-3 border border-1 rounded rounded-pill align-items-center bg-dark"
+                <button
+                  class="btn btn-outline-danger text-wrap mx-2 px-3 rounded-pill"
                 >
-                  <input
-                    class="form-control me-2 border-0 text-white bg-transparent"
-                    type="search"
-                    placeholder="Search"
-                    aria-label="Search"
-                  />
-                  <div>
-                    <a href="#">
-                      <img
-                        src="/assets/images/search-icon.svg"
-                        class="img-fluid"
-                        alt=""
-                      />
-                    </a>
-                  </div>
-                </form>
-                
+                  Switch to Bikes
+                </button>
               </div>
             </div>
           </nav>
@@ -101,63 +100,52 @@
     </section>
 
     <!-- Navbar Section Ended -->
-    
+
     <!-- OffCanvas Section Started -->
-    
-    <div class="offcanvas offcanvas-start bg-dark" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+
+    <div
+      class="offcanvas offcanvas-start bg-dark"
+      tabindex="-1"
+      id="offcanvasExample"
+      aria-labelledby="offcanvasExampleLabel"
+    >
       <div class="offcanvas-header mx-4">
         <h5 class="offcanvas-title" id="offcanvasExampleLabel">
-          <img src="/assets/images/logo.png" class="img-fluid" alt="">
+          <img src="/assets/images/logo.png" class="img-fluid" alt="" />
         </h5>
-        <button type="button" class="btn-close text-reset bg-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        <button
+          type="button"
+          class="btn-close text-reset bg-white"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
       </div>
-      <div class="offcanvas-body px-5">
+      <div class="offcanvas-body mx-4">
         <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a
-              class="nav-link active text-white"
-              aria-current="page"
-              href="#"
+            <a class="nav-link active text-white" aria-current="page" href="#"
               >Home</a
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white px-md-5 px-0" href="#"
-              >About</a
-            >
+            <a class="nav-link text-white px-lg-5 px-0" href="#">About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-white" href="#">Shop</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white px-md-5 px-0" href="#"
-              >Blogs</a
-            >
+            <a class="nav-link text-white px-lg-5 px-0" href="/blogs.html">Blogs</a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-white" href="#">Contact</a>
           </li>
         </ul>
 
-        <form
-          class="d-flex search-bar px-3 border border-1 rounded rounded-pill align-items-center bg-dark"
+        <button
+          class="btn btn-outline-danger text-wrap mx-md-2 mx-0 my-md-0 my-3 px-3 rounded-pill"
         >
-          <input
-            class="form-control me-2 border-0 text-white bg-transparent"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-          />
-          <div>
-            <a href="#">
-              <img
-                src="/assets/images/search-icon.svg"
-                class="img-fluid"
-                alt=""
-              />
-            </a>
-          </div>
-        </form>
+          Switch to Bikes
+        </button>
       </div>
     </div>
 
@@ -166,80 +154,255 @@
     <!-- Hero Section Started -->
 
     <section>
-      <div class="">
-        <div class="">
-          <div
-            id="carouselExampleFade"
-            class="carousel slide carousel-fade"
-            data-bs-ride="carousel"
-          >
-            <div class="carousel-inner">
-              <div class="carousel-item active position-relative">
-                <img
-                  src="/assets/images/1.png"
-                  class="d-block w-100"
-                  alt="..."
-                />
-                <div class="position-absolute hero-text">
-                  <h1 class="oswald text-white">Welcome to the World of
-                    Luxury Automobiles</h1>
-                  <p class="text-white oswald fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facere delectus omnis facere delectus omnis fuga voluptates reiciendis.</p>
-                  <button class="btn btn-danger">Explore Now</button>
-                </div>
-              </div>
-              <div class="carousel-item position-relative">
-                <img
-                  src="/assets/images/2.png"
-                  class="d-block w-100"
-                  alt="..."
-                />
-                <div class="position-absolute hero-text">
-                  <h1 class="oswald text-white">We Are
-                    Qualified &
-                    Professional.</h1>
-                  <p class="fs-5 text-white oswald"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facere delectus omnis facere delectus omnis fuga voluptates reiciendis.</p>
-                  <button class="btn btn-danger">Explore Now</button>
-                </div>
-              </div>
-              <div class="carousel-item position-relative">
-                <img
-                  src="/assets/images/3.png"
-                  class="d-block w-100"
-                  alt="..."
-                />
-                <div class="position-absolute hero-text">
-                  <h1 class="oswald text-white">Elevate Your Drive with the Ultimate Experience!</h1>
-                  <p class="fs-5 text-white oswald"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facere delectus omnis facere delectus omnis fuga voluptates reiciendis.</p>
-                  <button class="btn btn-danger">Explore Now</button>
-                </div>
-              </div>
+      <div
+        id="carouselExampleFade"
+        class="carousel slide carousel-fade position-relative"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active position-relative">
+            <img src="/assets/images/1.png" class="d-block w-100" alt="..." />
+            <div class="position-absolute hero-text text-center">
+              <h1 class="oswald text-white px-5">
+                Welcome to the World of Luxury Automobiles
+              </h1>
             </div>
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselExampleFade"
-              data-bs-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselExampleFade"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+          </div>
+          <div class="carousel-item position-relative">
+            <img src="/assets/images/2.png" class="d-block w-100" alt="..." />
+            <div class="position-absolute hero-text text-center">
+              <h1 class="oswald text-white px-5 text-center">
+                Elevate Your Drive with the Ultimate Experience!
+              </h1>
+            </div>
+          </div>
+
+          <div
+            class="position-absolute search-box bg-white px-3 py-2 rounded-pill d-flex align-items-center justify-content-evenly"
+          >
+            <div class="search-bar">
+              <input
+                type="email"
+                class="form-control border-0"
+                placeholder="Search"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+              />
+            </div>
+            <div class="vertical-line"></div>
+            <div class="dropdown">
+              <button
+                class="btn btn-secondary bg-white text-dark border-0 dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton1"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Brand
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Audi A Series</a></li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >Audi Q Series (SUVs and crossovers)</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >Audi e-Tron Series (Electric Vehicles)</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >Audi S Series (Performance Models)</a
+                  >
+                </li>
+                <li><a class="dropdown-item" href="#">Audi TT Series</a></li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >BYD Tang Series (Plug-in Hybrid and Electric SUVs)</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >BYD Qin Series (Plug-in Hybrid and Electric Sedans)</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >BYD Han Series (Electric Sedans)
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >BYD Song Series (Electric SUVs)
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >BYD Yuan Series (Electric Subcompact SUVs)
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >BYD e Series (Electric Compact Cars)
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >BYD Dolphin (Electric Hatchback)
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >BYD e1 (Compact Electric Car)
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >BYD Qin Pro (Plug-in Hybrid and Electric Sedans)
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >BYD Tang DM (Plug-in Hybrid SUV)
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >BYD Dynasty (Concept Electric SUV)
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="vertical-line"></div>
+            <div class="dropdown">
+              <button
+                class="btn btn-secondary bg-white text-dark border-0 dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton1"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Model
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li>
+                  <a class="dropdown-item" href="#">Audi A1</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Audi A3</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Audi A4</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Audi A5</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Audi A6</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Audi A7</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Audi A8</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Audi Q2</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Audi Q3</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >Audi Q4 e-tron (electric SUV)</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Audi Q5</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Audi Q7</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Audi Q8</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Audi e-Tron</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Audi e-Tron GT</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >Audi Q4 e-Tron (electric SUV)</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Audi S3</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Audi S4</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Audi S5</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Audi S6</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Audi S7</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Audi S8</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Audi SQ2</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Audi SQ5</a>
+                </li>
+              </ul>
+            </div>
+            <div class="vertical-line"></div>
+            <div class="ps-2">
+              <a href="#">
+                <img
+                  src="/assets/images/Search-icon.svg"
+                  class="img-fluid"
+                  alt=""
+                />
+              </a>
+            </div>
+          </div>
+          <div class="carousel-item position-relative">
+            <img src="/assets/images/3.png" class="d-block w-100" alt="..." />
+            <div class="position-absolute hero-text text-center">
+              <h1 class="oswald text-white px-5">
+                We Are Qualified & Professional.
+              </h1>
+            </div>
           </div>
         </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleFade"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleFade"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
     </section>
 
@@ -837,7 +1000,7 @@
               <a href="/car-details.html">
                 <div class="car-image">
                   <img
-                    src="https://demo.vehica.com/wp-content/uploads/2020/02/audi1.jpg"
+                    src="https://images.unsplash.com/photo-1540066019607-e5f69323a8dc?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     class="img-fluid"
                     alt=""
                   />
@@ -853,7 +1016,9 @@
                 </div>
               </div>
               <hr class="text-dark m-0" />
-              <div class="d-flex justify-content-between px-2">
+              <div
+                class="d-flex justify-content-between align-items-center px-lg-2 px-md-0 px-2"
+              >
                 <div>
                   <div class="d-flex align-items-center gap-2 py-2">
                     <div class="diesel-icon">
@@ -864,7 +1029,7 @@
                       />
                     </div>
                     <div>
-                      <p class="m-0 text-dark">Diesel</p>
+                      <p class="m-0 text-dark small-tab-text">Diesel</p>
                     </div>
                   </div>
                 </div>
@@ -878,7 +1043,7 @@
                       />
                     </div>
                     <div>
-                      <p class="m-0 text-dark">35,000 KM</p>
+                      <p class="m-0 small-tab-text text-dark">35,000 KM</p>
                     </div>
                   </div>
                 </div>
@@ -892,7 +1057,7 @@
                       />
                     </div>
                     <div>
-                      <p class="m-0 text-dark">1800 CC</p>
+                      <p class="m-0 small-tab-text text-dark">1800 CC</p>
                     </div>
                   </div>
                 </div>
@@ -904,7 +1069,7 @@
               <a href="/car-details.html">
                 <div class="car-image">
                   <img
-                    src="https://demo.vehica.com/wp-content/uploads/2020/02/audi1.jpg"
+                    src="https://images.unsplash.com/photo-1555215695-3004980ad54e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     class="img-fluid"
                     alt=""
                   />
@@ -920,7 +1085,9 @@
                 </div>
               </div>
               <hr class="text-dark m-0" />
-              <div class="d-flex justify-content-between px-2">
+              <div
+                class="d-flex justify-content-between align-items-center px-lg-2 px-md-0 px-2"
+              >
                 <div>
                   <div class="d-flex align-items-center gap-2 py-2">
                     <div class="diesel-icon">
@@ -931,7 +1098,7 @@
                       />
                     </div>
                     <div>
-                      <p class="m-0 text-dark">Diesel</p>
+                      <p class="m-0 text-dark small-tab-text">Diesel</p>
                     </div>
                   </div>
                 </div>
@@ -945,7 +1112,7 @@
                       />
                     </div>
                     <div>
-                      <p class="m-0 text-dark">35,000 KM</p>
+                      <p class="m-0 small-tab-text text-dark">35,000 KM</p>
                     </div>
                   </div>
                 </div>
@@ -959,7 +1126,7 @@
                       />
                     </div>
                     <div>
-                      <p class="m-0 text-dark">1800 CC</p>
+                      <p class="m-0 small-tab-text text-dark">1800 CC</p>
                     </div>
                   </div>
                 </div>
@@ -971,7 +1138,7 @@
               <a href="/car-details.html">
                 <div class="car-image">
                   <img
-                    src="https://demo.vehica.com/wp-content/uploads/2020/02/audi1.jpg"
+                    src="https://images.unsplash.com/photo-1623659251300-b8413c9ad656?q=80&w=1995&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     class="img-fluid"
                     alt=""
                   />
@@ -987,7 +1154,9 @@
                 </div>
               </div>
               <hr class="text-dark m-0" />
-              <div class="d-flex justify-content-between px-2">
+              <div
+                class="d-flex justify-content-between align-items-center px-lg-2 px-md-0 px-2"
+              >
                 <div>
                   <div class="d-flex align-items-center gap-2 py-2">
                     <div class="diesel-icon">
@@ -998,7 +1167,7 @@
                       />
                     </div>
                     <div>
-                      <p class="m-0 text-dark">Diesel</p>
+                      <p class="m-0 text-dark small-tab-text">Diesel</p>
                     </div>
                   </div>
                 </div>
@@ -1012,7 +1181,7 @@
                       />
                     </div>
                     <div>
-                      <p class="m-0 text-dark">35,000 KM</p>
+                      <p class="m-0 small-tab-text text-dark">35,000 KM</p>
                     </div>
                   </div>
                 </div>
@@ -1026,7 +1195,7 @@
                       />
                     </div>
                     <div>
-                      <p class="m-0 text-dark">1800 CC</p>
+                      <p class="m-0 small-tab-text text-dark">1800 CC</p>
                     </div>
                   </div>
                 </div>
@@ -1038,7 +1207,7 @@
               <a href="/car-details.html">
                 <div class="car-image">
                   <img
-                    src="https://demo.vehica.com/wp-content/uploads/2020/02/audi1.jpg"
+                    src="https://images.unsplash.com/photo-1694027655519-016c93b014e6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     class="img-fluid"
                     alt=""
                   />
@@ -1054,7 +1223,9 @@
                 </div>
               </div>
               <hr class="text-dark m-0" />
-              <div class="d-flex justify-content-between px-2">
+              <div
+                class="d-flex justify-content-between align-items-center px-lg-2 px-md-0 px-2"
+              >
                 <div>
                   <div class="d-flex align-items-center gap-2 py-2">
                     <div class="diesel-icon">
@@ -1065,7 +1236,7 @@
                       />
                     </div>
                     <div>
-                      <p class="m-0 text-dark">Diesel</p>
+                      <p class="m-0 text-dark small-tab-text">Diesel</p>
                     </div>
                   </div>
                 </div>
@@ -1079,7 +1250,7 @@
                       />
                     </div>
                     <div>
-                      <p class="m-0 text-dark">35,000 KM</p>
+                      <p class="m-0 small-tab-text text-dark">35,000 KM</p>
                     </div>
                   </div>
                 </div>
@@ -1093,7 +1264,7 @@
                       />
                     </div>
                     <div>
-                      <p class="m-0 text-dark">1800 CC</p>
+                      <p class="m-0 small-tab-text text-dark">1800 CC</p>
                     </div>
                   </div>
                 </div>
@@ -1105,7 +1276,7 @@
               <a href="/car-details.html">
                 <div class="car-image">
                   <img
-                    src="https://demo.vehica.com/wp-content/uploads/2020/02/audi1.jpg"
+                    src="https://images.unsplash.com/photo-1625037669052-7e033716f325?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     class="img-fluid"
                     alt=""
                   />
@@ -1121,7 +1292,9 @@
                 </div>
               </div>
               <hr class="text-dark m-0" />
-              <div class="d-flex justify-content-between px-2">
+              <div
+                class="d-flex justify-content-between align-items-center px-lg-2 px-md-0 px-2"
+              >
                 <div>
                   <div class="d-flex align-items-center gap-2 py-2">
                     <div class="diesel-icon">
@@ -1132,7 +1305,7 @@
                       />
                     </div>
                     <div>
-                      <p class="m-0 text-dark">Diesel</p>
+                      <p class="m-0 text-dark small-tab-text">Diesel</p>
                     </div>
                   </div>
                 </div>
@@ -1146,7 +1319,7 @@
                       />
                     </div>
                     <div>
-                      <p class="m-0 text-dark">35,000 KM</p>
+                      <p class="m-0 small-tab-text text-dark">35,000 KM</p>
                     </div>
                   </div>
                 </div>
@@ -1160,7 +1333,7 @@
                       />
                     </div>
                     <div>
-                      <p class="m-0 text-dark">1800 CC</p>
+                      <p class="m-0 small-tab-text text-dark">1800 CC</p>
                     </div>
                   </div>
                 </div>
@@ -1172,7 +1345,7 @@
               <a href="/car-details.html">
                 <div class="car-image">
                   <img
-                    src="https://demo.vehica.com/wp-content/uploads/2020/02/audi1.jpg"
+                    src="https://images.unsplash.com/photo-1621838383027-1b5bd95d1b45?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     class="img-fluid"
                     alt=""
                   />
@@ -1188,7 +1361,9 @@
                 </div>
               </div>
               <hr class="text-dark m-0" />
-              <div class="d-flex justify-content-between px-2">
+              <div
+                class="d-flex justify-content-between align-items-center px-lg-2 px-md-0 px-2"
+              >
                 <div>
                   <div class="d-flex align-items-center gap-2 py-2">
                     <div class="diesel-icon">
@@ -1199,7 +1374,7 @@
                       />
                     </div>
                     <div>
-                      <p class="m-0 text-dark">Diesel</p>
+                      <p class="m-0 text-dark small-tab-text">Diesel</p>
                     </div>
                   </div>
                 </div>
@@ -1213,7 +1388,7 @@
                       />
                     </div>
                     <div>
-                      <p class="m-0 text-dark">35,000 KM</p>
+                      <p class="m-0 small-tab-text text-dark">35,000 KM</p>
                     </div>
                   </div>
                 </div>
@@ -1227,7 +1402,7 @@
                       />
                     </div>
                     <div>
-                      <p class="m-0 text-dark">1800 CC</p>
+                      <p class="m-0 small-tab-text text-dark">1800 CC</p>
                     </div>
                   </div>
                 </div>
@@ -2837,6 +3012,108 @@
       </div>
     </section>
 
+    <!-- Blogs Section Started -->
+
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <h1 class="oswald">Read Our Recent Blog Post</h1>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="d-flex justify-content-end">
+              <a href="#">
+                <button class="btn btn-danger rounded-pill">View All Blog Post</button>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row gy-3 my-md-5 my-2">
+          <div class="col-12 col-md-4">
+            <div class="card">
+              <a href="#">
+                <div class="blog-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1619767886558-efdc259cde1a?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="img-fluid rounded-3"
+                    alt=""
+                  />
+                </div>
+                <div class="p-3">
+                  <a href="#" class="text-decoration-none text-danger">
+                    <h4 class="oswald">
+                      The Ultimate Guide to Choosing the Perfect Family Car:
+                      Factors...
+                    </h4>
+                  </a>
+                  <p class="text-secondary">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Vivamus vitae ornare...
+                  </p>
+                  <a href="#">Read More</a>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="card">
+              <a href="#">
+                <div class="blog-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1607853554439-0069ec0f29b6?q=80&w=1854&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="img-fluid rounded-3"
+                    alt=""
+                  />
+                </div>
+                <div class="p-3">
+                  <a href="#" class="text-decoration-none text-danger">
+                    <h4 class="oswald">
+                      The Ultimate Guide to Choosing the Perfect Family Car:
+                      Factors...
+                    </h4>
+                  </a>
+                  <p class="text-secondary">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Vivamus vitae ornare...
+                  </p>
+                  <a href="#">Read More</a>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="card">
+              <a href="#">
+                <div class="blog-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1537984822441-cff330075342?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="img-fluid rounded-3"
+                    alt=""
+                  />
+                </div>
+                <div class="p-3">
+                  <a href="#" class="text-decoration-none text-danger">
+                    <h4 class="oswald">
+                      The Ultimate Guide to Choosing the Perfect Family Car:
+                      Factors...
+                    </h4>
+                  </a>
+                  <p class="text-secondary">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Vivamus vitae ornare...
+                  </p>
+                  <a href="#">Read More</a>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blogs Section Ended -->
+
     <footer class="d-flex justify-content-center align-items-center py-5">
       <div class="container">
         <div class="row gy-3">
@@ -2847,9 +3124,8 @@
               </a>
               <p class="text-white oswald pt-3">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
-                voluptatum. 
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
-                voluptatum 
+                voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Totam voluptatum
               </p>
               <div class="social-links d-flex gap-4">
                 <a href="#" class="text-decoration-none">
@@ -2869,16 +3145,24 @@
             <div class="">
               <ul class="list-unstyled">
                 <li>
-                  <a href="#" class="text-white text-decoration-none oswald">All Vehicles</a>
+                  <a href="#" class="text-white text-decoration-none oswald"
+                    >All Vehicles</a
+                  >
                 </li>
                 <li>
-                  <a href="#" class="text-white text-decoration-none oswald">New Cars</a>
+                  <a href="#" class="text-white text-decoration-none oswald"
+                    >New Cars</a
+                  >
                 </li>
                 <li>
-                  <a href="#" class="text-white text-decoration-none oswald">Pickup Trucks</a>
+                  <a href="#" class="text-white text-decoration-none oswald"
+                    >Pickup Trucks</a
+                  >
                 </li>
                 <li>
-                  <a href="#" class="text-white text-decoration-none oswald">Auction Cars</a>
+                  <a href="#" class="text-white text-decoration-none oswald"
+                    >Auction Cars</a
+                  >
                 </li>
               </ul>
             </div>
@@ -2888,16 +3172,24 @@
             <div class="">
               <ul class="list-unstyled">
                 <li>
-                  <a href="#" class="text-white text-decoration-none oswald">BMW</a>
+                  <a href="#" class="text-white text-decoration-none oswald"
+                    >BMW</a
+                  >
                 </li>
                 <li>
-                  <a href="#" class="text-white text-decoration-none oswald">BYD</a>
+                  <a href="#" class="text-white text-decoration-none oswald"
+                    >BYD</a
+                  >
                 </li>
                 <li>
-                  <a href="#" class="text-white text-decoration-none oswald">Tesla</a>
+                  <a href="#" class="text-white text-decoration-none oswald"
+                    >Tesla</a
+                  >
                 </li>
                 <li>
-                  <a href="#" class="text-white text-decoration-none oswald">Toyota</a>
+                  <a href="#" class="text-white text-decoration-none oswald"
+                    >Toyota</a
+                  >
                 </li>
               </ul>
             </div>
@@ -2907,16 +3199,24 @@
             <div class="">
               <ul class="list-unstyled">
                 <li>
-                  <a href="#" class="text-white text-decoration-none oswald">Reviews</a>
+                  <a href="#" class="text-white text-decoration-none oswald"
+                    >Reviews</a
+                  >
                 </li>
                 <li>
-                  <a href="#" class="text-white text-decoration-none oswald">FAQ’s</a>
+                  <a href="#" class="text-white text-decoration-none oswald"
+                    >FAQ’s</a
+                  >
                 </li>
                 <li>
-                  <a href="#" class="text-white text-decoration-none oswald">Privacy & Policy</a>
+                  <a href="#" class="text-white text-decoration-none oswald"
+                    >Privacy & Policy</a
+                  >
                 </li>
                 <li>
-                  <a href="#" class="text-white text-decoration-none oswald">Terms & Conditions</a>
+                  <a href="#" class="text-white text-decoration-none oswald"
+                    >Terms & Conditions</a
+                  >
                 </li>
               </ul>
             </div>
@@ -2925,7 +3225,7 @@
       </div>
     </footer>
 
-    <!-- Browse More Cars Section Ended -->
+ 
 
     <script src="/assets/script/myScript.js"></script>
 

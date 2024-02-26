@@ -24,7 +24,7 @@ body {
 } */
 
 .carousel-item {
-  height: 90vh;
+  height: 100vh;
 }
 
 .carousel-item img {
@@ -32,17 +32,44 @@ body {
   height: 100vh;
 }
 
+.search-box {
+  top: 73%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99;
+  width: 50%;
+}
+
+.vertical-line {
+  border-left: 1.5px solid #cbcbcb;
+  height: 30px;
+}
+
+.dropdown-menu {
+  max-height: 139px;
+  overflow-y: scroll;
+  border: 1px solid rgb(225, 225, 225);
+  z-index: 9999999;
+}
+
+.btn-secondary:focus {
+  box-shadow: none;
+}
 
 .hero-text {
-  top: calc(100% - 85%);
-  left: calc(100% - 90%);
-  height: 100px;
-  width: 65%;
+  top: calc(100% - 80%);
+  /* left: calc(100% - 80%); */
+  /* transform: translate(-50%, -50%); */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
 }
 
 .hero-text h1 {
-  font-size: 70px;
+  font-size: 100px;
 }
+
+
 .oswald {
   font-family: "Oswald", sans-serif !important    ;
 }
@@ -99,6 +126,7 @@ body {
   transition: 0.9s;
   height: 100%;
   width: 100%;
+  object-fit: cover;
 }
 
 .car-image img:hover {
@@ -107,6 +135,37 @@ body {
 
 .btn-text {
   font-size: 10px;
+}
+
+.blog-image {
+  height: 200px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.blog-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: 0.4s;
+  border-radius: 20px;
+}
+
+.blog-image img:hover {
+  transform: scale(1.1);
+}
+
+.single-blog-picture {
+  margin: 100px 0px;
+  height: 500px;
+  width: 100%;
+}
+
+.single-blog-picture img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 .bg-orange {
@@ -118,12 +177,12 @@ body {
   width: 30px;
 }
 
-
 .icon {
   height: 25px;
   width: 25px;
 }
 
+ 
 .icon img {
   height: 100%;
   width: 100%;
@@ -185,10 +244,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
- 
 .car-logo img {
   height: 100%;
   width: 100%;
@@ -228,28 +285,40 @@ footer {
   background-size: cover;
 }
 
-/* // Small devices (landscape phones, less than 768px) */
-@media (max-width: 767.98px) {
+
+
+
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
   .navbar-collapse {
     display: none;
   }
   .carousel-item {
     height: 70vh;
   }
-
   .carousel-item img {
     object-fit: cover;
     object-position: center;
   }
   .hero-text {
-    top: calc(100% - 85%);
-    left: calc(100% - 90%);
-    height: 100px;
-    width: 65%;
+    top: calc(100% - 57%);
+    left: calc(100% - 50%);
+    transform: translate(-50%, -50%)  
   }
-  
   .hero-text h1 {
-    font-size: 30px;
+    font-size: 29px;
+    text-align: center;
+  }
+  .search-box {
+    width: 60%;
+  }
+  .diesel-icon {
+    height: 20px;
+    width: 20px;
+  }
+  .small-tab-text {
+    font-size: 10px;
   }
   .comment-date {
     display: none;
@@ -261,14 +330,119 @@ footer {
     background-size: cover;
     background-attachment: fixed;
   }
+ }
+
+ 
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  .navbar-collapse {
+    display: none;
+  }
+  .carousel-item {
+    height: 70vh;
+  }
+  .carousel-item img {
+    object-fit: cover;
+    object-position: center;
+  }
+  .hero-text {
+    top: calc(100% - 57%);
+    /* transform: translate(-50%, -50%) */
+  }
+  .hero-text h1 {
+    font-size: 29px;
+  }
+  .search-box {
+    width: 85%;
+  }
+  .comment-date {
+    display: none;
+  }
+  .single-blog-picture {
+    margin: 70px 0px;
+    height: 250px;
+    width: 100%;
+  }
+  
+  .single-blog-picture img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  footer {
+    background-image: url(/assets/images/footer-bg.png);
+    height: max-content;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .product-img {
   width: 100%;
   height: 27.2rem;
   position: relative;
-  /* margin-bottom: 2rem; */
+  margin-top: 3rem;
   border-radius: 0.5rem;
   background: #ffffff;
   overflow: hidden;
